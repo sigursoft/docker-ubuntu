@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
-MAINTAINER Fabian Stäber, fabian@fstab.de
+MAINTAINER Anton Kozik, pazitron@gmail.com
 
-ENV LAST_UPDATE=2016-09-19
+ENV LAST_UPDATE=2016-09-25
 
 RUN apt-get update && \
     apt-get upgrade -y
@@ -26,21 +26,17 @@ RUN apt-get install -y \
     git \
     lsof \
     man \
-    netcat \
     psmisc \
     screen \
-    telnet \
     vim \
     wget
 
 # admin tools
 
 RUN apt-get install -y \
-    expect
+    htop
 
 # developer tools
 
 RUN apt-get install -y \
-    build-essential \
-    golang \
-    libtool
+    openjdk-8-jdk-headless
