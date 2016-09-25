@@ -7,8 +7,8 @@ RUN apt-get update && \
     apt-get upgrade -y
 
 # Set the timezone
-RUN echo "Europe/Berlin" | tee /etc/timezone && \
-    ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime && \
+RUN echo "Europe/Warsaw" | tee /etc/timezone && \
+    ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 
 # Set the locale for UTF-8 support
