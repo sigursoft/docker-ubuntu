@@ -1,4 +1,4 @@
 docker-ubuntu
 =============
 
-Ubuntu base image with commonly used packages.
+Ubuntu image with minimal set of packages.
