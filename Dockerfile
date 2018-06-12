@@ -1,10 +1,14 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Anton Kozik, pazitron@gmail.com
 
-ENV LAST_UPDATE=2016-09-25
+ENV LAST_UPDATE=2018-06-12
 
 RUN apt-get update && \
     apt-get upgrade -y
+
+RUN apt-get install -y \
+    tzdata \
+    locales
 
 # Set the timezone
 RUN echo "Europe/Warsaw" | tee /etc/timezone && \
