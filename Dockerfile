@@ -43,4 +43,4 @@ RUN apt-get install -y \
 # developer tools
 
 RUN apt-get install -y \
-    openjdk-8-jdk-headless
+    openjdk-11-jdk-headless
