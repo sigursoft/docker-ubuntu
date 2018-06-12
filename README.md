@@ -1,4 +1,4 @@
 docker-ubuntu
 =============
 
-Ubuntu image with minimal set of packages.
+Ubuntu 18.04 image with minimal set of usefull packages.
